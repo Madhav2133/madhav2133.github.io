@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins";
+    }
+
+    .header {
+      width: 100%;
+      padding-top: 120px;
+      padding-bottom: 100px;
+      padding-left: 74px;
+      background-color: black;
+      color: white;
+    }
+
+    .header h1 {
+      text-shadow: 3px 3px 4px #3b8beb;
+      font-family: "Poppins";
+      font-size: 120px;
+      font-weight: 800;
+      line-height: 120px;
+    }
+
+    .header p {
+      padding-left: 1050px;
+      padding-top: 50px;
+      padding-bottom: 10px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .nav {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-shadow: 2px 2px 4px #000;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      font-size: 20px;
+      overflow: hidden;
+      background-color: #3b8beb;
+      z-index: 100;
+    }
+
+    .nav a {
+      float: right;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 25px 32px;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      text-shadow: 2px 2px 4px #ccc;
+      background-color: #fffaf0;
+      color: #000;     
+    }
+
+    .about-me {
+      padding-top: 30px;
+      padding-left: 74px;
+    }
+
+    .about-me h1 {
+      text-shadow: 3px 3px 4px #3b8beb;
+      font-family: "Poppins";
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 120px;
+      border-bottom: 10px solid #3b8beb;
+      width: 35%;
+    }
+
+    .about-me p {
+      font-family: "Poppins";
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 50px;
+    }
+
+    .skills {
+      padding-top: 30px;
+      padding-left: 74px;
+    }
+
+    .skills h1 {
+      text-shadow: 3px 3px 4px #3b8beb;
+      font-family: "Poppins";
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 120px;
+      border-bottom: 10px solid #3b8beb;
+      width: 35%;
+    }
+
+    .skills ul {
+      font-family: "Poppins";
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 50px;
+    }
+
+    .discover {
+      padding-top: 30px;
+      padding-left: 74px;
+      padding-bottom: 20px;
+    }
+
+    .discover h1 {
+      text-shadow: 3px 3px 4px #3b8beb;
+      font-family: "Poppins";
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 120px;
+      border-bottom: 10px solid #3b8beb;
+      width: 35%;
+    }
+
+    .discover h3 {
+      font-family: "Poppins";
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 50px;
+    }
+
+    .projects {
+      background-color: #3b8beb;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.5;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+      z-index: 2;     
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .footer {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 74px;
+      background-color: black;
+    }
+
+    .footer h1 {
+      text-shadow: 3px 3px 4px #3b8beb;
+      color: #fff;
+      font-family: "Poppins";
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 120px;
+      border-bottom: 10px solid #3b8beb;
+      width: 35%;
+    }
+
+    .footer p {
+      padding-right: 200px;
+      color: #fff;
+      font-family: "Poppins";
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 50px;
+    }
+
+    .container {
+      width: 40%;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #3b8beb;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3b8beb;
+    }
+
+    .social a {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+
+
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+  <title>Venkata Madhav</title>
+</head>
+
+<body>
+  <div class="nav" id="navbar">
+    <a href="#contact">Contact Me</a>
+    <a href="#discover">Discover</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About Me</a>
+    <a href="#home">Home</a>
+  </div>
+
+  <div class="header" id="home">
+    <h1>Venkata<br />Madhav</h1>
+
+    <p>How you doin' ? 😎</p>
+  </div>
+
+  <div class="about-me" id="about">
+    <h1>ABOUT ME</h1>
+    <p>
+      Hi! This is Venkata Madhav, from Andhra Pradesh, India. <br />I'm
+      currently in my second year of BTech in Computer Science and Engineering
+      in IIITDM Kancheepuram, Chennai. <br />
+      I'm intrested in Robotics 🤖 and Designing 🎨.
+    </p>
+  </div>
+
+  <div class="skills" id="skills">
+    <h1>MY SKILLS</h1>
+
+    <ul>
+      <li>I've experience in Robotics field : Working with ROS and simulation software like Gazebo.</li>
+      <li>I'm skilled in CPP, Python and also intrested in CP a bit 😛.</li>
+      <li>I'm intrested in designing. I use softwares like Canva, Adobe Illustrator, Figma to design logos, posters,
+        websites etc..</li>
+      <li>I've experience in video editing too...📹</li>
+    </ul>
+  </div>
+
+  <div class="discover" id="discover">
+    <h1>DISCOVER</h1>
+    <p>
+    <h3>Here are some of my projects :</h3>
+    </p>
+  </div>
+
+  <div class="projects" style="height: 500px;"></div>
+
+  <br><br><br>
+
+  <div class="footer" id="contact">
+    <h1>CONTACT ME</h1>
+
+    <div class="container">
+      <form action="action_page.php">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." />
+
+        <label for="subject">Leave your message</label>
+        <textarea id="subject" name="subject" placeholder="...." style="height: 200px"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>
