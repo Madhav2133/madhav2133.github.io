@@ -1,0 +1,192 @@
+@import url(/css/global.css);
+
+.opening-page {
+  background-color: #010101;
+
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+}
+
+
+.opening-page .nav-bar .nav-bar-rectangle {
+    float: center;
+    position: fixed;
+    width: 100%;
+    top: 24px;
+    left: 24vh; 
+    background-color: #000;  
+    border-radius: 20px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+}
+
+.opening-page .main {
+  position: absolute;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  overflow: hidden;
+
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  place-items: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: initial;
+}
+
+.main .photo img {
+  object-fit: contain;
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+}
+
+.main .info {
+    text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+/* .text-part h2 {
+    border: none;
+} */
+
+.about-me {
+    background: linear-gradient(180deg, #000000 0%, #2869B7 60.42%);
+
+    width: 100%;
+  height: 100vh;
+}
+
+.about-me .main2 {
+    position: absolute;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 32vh 50vh;
+
+    overflow: hidden;
+  
+    padding: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    place-items: center;
+  }
+
+  .title-about-me {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+
+  }
+  
+  .text-part {
+    text-align: start;
+
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  
+  .pic-about-me {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+.skills {
+    background: linear-gradient(180deg, #2869B7 0.02%, #000000 100%);
+
+    width: 100%;
+    height: 100vh;
+}
+
+.skills .main3 {
+    position: absolute;
+
+    display: grid;
+
+    grid-template-rows: 40vh 50vh;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    place-items: center;
+}
+
+.content a {
+    text-decoration: none;
+    color: #fff;
+
+    font-size: larger;
+    font-weight: 550;
+
+    float: right;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px 32px;
+}
+
+.content a:hover {
+    /* background-color: #3B8BEB; */
+    color: #3B8BEB;
+
+    border-radius: 20px;
+}
+
+.logo img {
+    float: left;
+    display: block;
+    
+    width: 50px;
+    height: 50px;
+
+    padding: 7px 22px;
+}
+
+
+.skill-chips span img{
+    align-items: center;
+
+    width: 96px;
+    height: 96px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 24px 64px;
+}
+
+.projects {
+    background: linear-gradient(180deg, #000000 0%, #2869B7 52.08%);
+
+    width: 100%;
+    height: 100vh;
+}
