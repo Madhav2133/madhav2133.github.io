@@ -58,6 +58,36 @@
     text-align: center;
 }
 
+.title {
+  text-align: center;
+  position: relative;
+}
+
+.title::after,
+.title::before {
+  content: '';
+  position: absolute;
+
+  height: 5px;
+  background-color: #fff;
+
+  border-radius: 40px;
+}
+
+.title::before {
+  left: 10%;
+  bottom: 0%;
+
+  width: 80%;
+}
+
+.title::after {
+  left: 20%;
+  bottom: -15%;
+
+  width: 60%;
+}
+
 h1 {
   font-size: 6rem;
 }
@@ -69,10 +99,6 @@ p {
 h2 {
     font-size: 4.5rem;
 }
-
-/* .text-part h2 {
-    border: none;
-} */
 
 .about-me {
     background: linear-gradient(180deg, #000000 0%, #2869B7 60.42%);
@@ -98,7 +124,7 @@ h2 {
     place-items: center;
   }
 
-  .title-about-me {
+ .title-about-me  {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
 
@@ -232,19 +258,68 @@ h2 {
 }
 
 .contact-sec .main5 {
-position: absolute;
+  position: absolute;
 
-display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 32vh 50vh;
 
-grid-template-rows: 40vh 50vh;
+  overflow: hidden;
 
-overflow: hidden;
+  padding: 0;
 
-padding: 0;
+  width: 100%;
+  height: 100%;
 
-width: 100%;
-height: 100%;
+  place-items: center;
+}
 
-place-items: center;
+.title-contact  {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
 
+}
+
+.contact-details {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.name-and-contact {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  
+}
+
+/* .tandc  {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+
+} */
+
+.contact-details img {
+  width: 100%;
+}
+
+.name-and-contact img {
+  padding: 24px 24px;
+}
+
+.name-and-contact p {
+  padding-left: 24px;
+}
+
+.tandc {
+  text-align: center;
+}
+
+.copyrights {
+  color: #fff;
+  margin: auto;
+  font-size: 16px;
+}
+
+.tandc {
+  grid-column: 1 / span 2;
+  grid-row: 3/span 2;
 }
