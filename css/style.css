@@ -67,6 +67,8 @@
   border-radius: 50%;
   width: 450px;
   height: 450px;
+  object-fit: cover;
+  object-position: 0 50%;
 }
 
 .main .info {
@@ -76,6 +78,11 @@
 .title {
   text-align: center;
   position: relative;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: #fff;
 }
 
 .title::after,
@@ -146,6 +153,7 @@ h2 {
 
 .text-part {
   text-align: start;
+  padding-left: 80px;
 
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
@@ -158,12 +166,9 @@ h2 {
 
 .about-me .pic-about-me img {
   object-fit: contain;
-  border-radius: 50%;
   width: 450px;
   height: 450px;
   border: #000;
-
-  box-shadow: 0 0 0 4px #3b8beb;
 }
 
 .about-me span img {
