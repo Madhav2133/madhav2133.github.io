@@ -63,7 +63,7 @@
 }
 
 .main .photo img {
-  object-fit: contain;
+  /* object-fit: contain; */
   border-radius: 50%;
   width: 450px;
   height: 450px;
@@ -168,7 +168,7 @@ h2 {
   object-fit: contain;
   width: 450px;
   height: 450px;
-  border: #000;
+  /* border: #000; */
 }
 
 .about-me span img {
