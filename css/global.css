@@ -6,6 +6,8 @@ body {
   color: #fff;
   background-image: url('../assets/svgs/bg3.avif');
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   /* overflow: hidden; */
   
   min-height:100vh;

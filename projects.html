@@ -4,211 +4,281 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Venkata Madhav</title>
+    <meta
+      name="description"
+      content="Portfolio projects of Venkata Madhav - Showcasing innovative work in robotics, AI, and software development"
+    />
+    <meta
+      name="keywords"
+      content="projects, portfolio, robotics, AI, software development, Venkata Madhav"
+    />
+    <meta name="author" content="Venkata Madhav" />
+    <title>Projects | Venkata Madhav</title>
     <link
       rel="shortcut icon"
-      href="/assets/favicon/fav.png"
+      href="assets/favicon/fav.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="fix-it">
-      <div class="nav-bar">
-        <div class="nav-bar-rectangle">
-          <a href="./projects.html">Projects</a>
-          <a href="./skills.html">Skills</a>
-          <a href="./about.html">About</a>
-          <a href="./index.html">Home</a>
-          <div id="logo">
-            <a href="https://madhav2133.github.io/"
-              ><img src="/assets/favicon/fav.png" alt="logo"
-            /></a>
-            <p>Venkata Madhav</p>
+    <nav class="nav-bar">
+      <div class="nav-bar-rectangle">
+        <div id="logo">
+          <a href="index.html">
+            <img src="assets/favicon/fav.png" alt="logo" />
+          </a>
+          <p>Venkata Madhav</p>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html" class="active">Projects</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="projects">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <!--UAV -->
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://github.com/Madhav2133/fyp.git">
+              <img src="assets/projects/drone.png" alt="UAV" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>
+              Localisation of UAVs in Indoor Corridor Environments using Multi
+              Task Learning and Bezier Curve Optimisation
+            </h3>
+            <div class="project-tags">
+              <span>Robotics</span>
+              <span>Computer Vision</span>
+              <span>Autonomous Systems</span>
+              <span>Bezier Curve</span>
+              <span>Multi-Task Learning</span>
+            </div>
+            <p>
+              Developed GPS-free localization for UAVs in indoor environments,
+              enabling precise path following with minimal deviation in
+              translation and orientation.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Madhav2133/fyp.git"
+                class="project-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- AUV Nemo -->
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://auviiitdm.github.io/">
+              <img src="assets/projects/project1.jpg" alt="AUV Nemo" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>Autonomous Navigation Planner for AUV Nemo</h3>
+            <div class="project-tags">
+              <span>Robotics</span>
+              <span>Computer Vision</span>
+              <span>Autonomous Underwater Vehicle</span>
+              <span>ROS</span>
+              <span>Gazebo</span>
+            </div>
+            <p>
+              Developed an Autonomous Underwater Vehicle with 6 DOF featuring 3D
+              Visualised Oak-D Series 3 Camera for autonomous navigation in
+              SAUVC 2022, Singapore.
+            </p>
+            <div class="project-links">
+              <a href="https://auviiitdm.github.io/" class="project-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ROV Marty -->
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://auviiitdm.github.io/">
+              <img src="assets/projects/project2.jpg" alt="ROV Marty" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>Control System Integration for ROV Marty</h3>
+            <div class="project-tags">
+              <span>Robotics</span>
+              <span>Control Systems</span>
+              <span>Hybrid Vehicle</span>
+            </div>
+            <p>
+              Developed a hybrid vehicle capable of operating as both AUV and
+              ROV for the MATE-ROV World Championship 2023.
+            </p>
+            <div class="project-links">
+              <a href="https://auviiitdm.github.io/" class="project-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Traff Analyser -->
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://github.com/NSVEGUR/traffic-analyzer">
+              <img src="assets/projects/project3.jpg" alt="Traff Analyser" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>Traff Analyser</h3>
+            <div class="project-tags">
+              <span>CNN</span>
+              <span>Data Analysis</span>
+              <span>Traffic Patterns</span>
+            </div>
+            <p>
+              Analyzes traffic conditions using sensor data to predict traffic
+              trends at different junctions using a CNN model.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/NSVEGUR/traffic-analyzer"
+                class="project-link"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- TCAS System -->
+        <div class="project-card">
+          <div class="project-image">
+            <a
+              href="https://www.linkedin.com/posts/reye_junction-monitoring-system-activity-7099638831695499265-GNUg"
+            >
+              <img src="assets/projects/project0.jpg" alt="TCAS System" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>TCAS System</h3>
+            <div class="project-tags">
+              <span>ROS2</span>
+              <span>Gazebo</span>
+              <span>C++/Python</span>
+              <span>Nav2</span>
+            </div>
+            <p>
+              Multi-robot monitoring system that identifies potential junction
+              regions where robots might converge and regulates their passage to
+              prevent close proximity interactions.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://www.linkedin.com/posts/reye_junction-monitoring-system-activity-7099638831695499265-GNUg"
+                class="project-link"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Aquatic Classification -->
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://github.com/Madhav2133/aquatic-classification">
+              <img
+                src="assets/projects/project4.jpg"
+                alt="Aquatic Classification"
+              />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>Aquatic Animal Classification</h3>
+            <div class="project-tags">
+              <span>Deep Learning</span>
+              <span>MobileNetV2</span>
+              <span>ResNet50V2</span>
+            </div>
+            <p>
+              Implemented three Deep Learning Models for aquatic animal
+              classification, comparing accuracy outcomes and creating a web
+              application classifier.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Madhav2133/aquatic-classification"
+                class="project-link"
+                >GitHub Repo</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <section class="projects">
-      <h2
-        style="
-          text-align: center;
-          padding-top: 150px;
-          font-size: 3rem;
-          color: #3b8beb;
-        "
-      >
-        Projects
-      </h2>
-
-      <div class="projects-container">
-        <div class="project-image">
-          <a href="https://github.com/NSVEGUR/traffic-analyzer">
-            <img src="assets/projects/project3.jpg" alt="Project 3" />
-          </a>
-        </div>
-
-        <div class="project-info">
-          <p style="font-size: 1.7rem"><b>Traff Analyser</b></p>
-          <br />
-          <p style="font-size: 1.3rem">
-            Studies the traffic conditions through different sensor data at a
-            location and gives out the traffic trends. Based on traffic data
-            collected from a sensor placed at a junction for specific amount of
-            time, it studies the data and tell us the traffic trends from the
-            collected information. We have collected data from four junctions
-            and have displayed the trends of those with help of our CNN model.
-            <br /><br />
-            Checkout more at:
-            <a
-              href="https://github.com/NSVEGUR/traffic-analyzer"
-              style="color: #3b8beb"
-              >Project Github Repo</a
-            >
-          </p>
-        </div>
-
-        <div class="project-image">
-          <a href="https://github.com/Madhav2133/aquatic-classification">
-            <img src="assets/projects/project4.jpg" alt="Project 4" />
-          </a>
-        </div>
-
-        <div class="project-info">
-          <p style="font-size: 1.7rem"><b>Aquatic Animal Classification</b></p>
-          <br />
-          <p style="font-size: 1.3rem">
-            A course project on Aquatic Animal Classification done using three
-            Deep Learning Models namely MobileNetV2, ResNet50V2 and a CNN Model.
-            We studied the classification and its accuracy outcomes with the
-            help of these three models. Later we created a web application that
-            can makes use of this model to produce a aquatic animal classifier
-            application.
-            <br /><br />
-            Checkout more at:
-            <a
-              href="https://github.com/Madhav2133/aquatic-classification"
-              style="color: #3b8beb"
-              >Project Github Repo</a
-            >
-          </p>
-        </div>
-
-        <div class="project-image">
-          <a href="https://auviiitdm.github.io/">
-            <img src="assets/projects/project1.jpg" alt="AUV Nemo" />
-          </a>
-        </div>
-
-        <!-- <div class="timeline">
-          </div> -->
-
-        <div class="project-info">
-          <p style="font-size: 1.7rem">
-            <b>Autonomous Navigation Planner for AUV Nemo</b>
-          </p>
-          <br />
-          <p style="font-size: 1.3rem">
-            Worked in the developement of Autonomous Underwater Vehicle (AUV) at
-            AUV Society, IIITDMK. Nemo is an Underwater Vehicle with 6 DOF which
-            contains a 3D Visualised Oak-D Series 3 Camera which helps in its
-            autonomous navigation for performing various tasks required for the
-            competition. This bot was built for participating in the event
-            Singaport AUV Challange (SAUVC) in the year 2022. <br /><br />
-            Checkout more at:
-            <a href="https://auviiitdm.github.io/" style="color: #3b8beb"
-              >https://auviiitdm.github.io/</a
-            >
-          </p>
-        </div>
-
-        <div class="project-image">
-          <a href="https://auviiitdm.github.io/">
-            <img src="assets/projects/project2.jpg" alt="Project 2" />
-          </a>
-        </div>
-
-        <!-- <div class="timeline">
-          </div> -->
-
-        <div class="project-info">
-          <p style="font-size: 1.7rem">
-            <b>Control System Integration for ROV Marty</b>
-          </p>
-          <br />
-          <p style="font-size: 1.3rem">
-            Worked in the developement of Remotely Operated Vehicle (ROV) at AUV
-            Society, IIITDMK. ROV Marty is an hybrid vehicle which can work both
-            as an AUV and ROV. Its designed in such a way that with simple
-            modifications we can convert it from one model to another so based
-            on the requirements of the competition, we can make sure the bot can
-            be ready. This bot was built in the year 2023 for the MATE-ROV World
-            Championship 2023 which is being held in Longmont, CO. <br /><br />
-            Checkout more at:
-            <a href="https://auviiitdm.github.io/" style="color: #3b8beb"
-              >https://auviiitdm.github.io/</a
-            >
-          </p>
-        </div>
-
-        <!-- <div class="timeline">
-          </div> -->
-
-        <div class="project-image">
-          <a
-            href="https://www.linkedin.com/posts/reye_junction-monitoring-system-activity-7099638831695499265-GNUg?utm_source=share&utm_medium=member_desktop"
-          >
-            <img src="assets/projects/project0.jpg" alt="TCAS System" />
-          </a>
-        </div>
-
-        <div class="project-info">
-          <p style="font-size: 1.7rem"><b> TCAS System</b></p>
-          <br />
-          <p style="font-size: 1.3rem">
-            (ROS2, Gazebo, C++/Python, TurtleBot3, ROS-Nav2) Multi-robot
-            monitoring system called TCAS, which monitors multiple robots in a
-            given arena and identify potential junction regions where robots
-            might converge and to regulate their passage to prevent any close
-            proximity interactions. <br /><br />
-            Checkout more at:
-            <a
-              href="https://www.linkedin.com/posts/reye_junction-monitoring-system-activity-7099638831695499265-GNUg?utm_source=share&utm_medium=member_desktop"
-              style="color: #3b8beb"
-              >https://www.linkedin.com/posts/reye_junction-monitoring-system/</a
-            >
-          </p>
-        </div>
+    <footer class="site-footer">
+      <div class="name-and-contact">
+        <a href="mailto:tadavarthivenkatamadhav@gmail.com" title="Email">
+          <img src="assets/svgs/icons8-mail.svg" alt="Email" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/madhav2133"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <img src="assets/svgs/icons8-linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/Madhav2133" target="_blank" title="GitHub">
+          <img src="assets/svgs/icons8-github.svg" alt="GitHub" />
+        </a>
       </div>
-
-      <p style="text-align: center; padding-top: 20px; font-size: medium">
-        If you would like to colabrate with me, feel free me to contact me
-        through my email!
-      </p>
-
-      <div
-        class="name-and-contact"
-        style="padding-top: 50px; display: flex; justify-content: center"
-      >
-        <a href="mailto:tadavarthivenkatamadhav@gmail.com"
-          ><img src="/assets/svgs/icons8-mail.svg" alt=""
-        /></a>
-        <a href="https://www.linkedin.com/in/madhav2133" target="_blank"
-          ><img src="/assets/svgs/icons8-linkedin.svg" alt=""
-        /></a>
-        <a href="https://github.com/Madhav2133" target="_blank"
-          ><img src="/assets/svgs/icons8-github.svg" alt=""
-        /></a>
-      </div>
-
-      <div class="tandc" style="padding-top: 10px">
-        <p class="copyrights">Designed and created by me ❤️</p>
-      </div>
-    </section>
+      <p class="copyrights">Designed and created by me ❤️</p>
+    </footer>
 
     <script>
-      window.addEventListener("load", function () {
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        navLinks.forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+
+        // Add loaded class to body for fade-in effect
         document.body.classList.add("loaded");
       });
     </script>

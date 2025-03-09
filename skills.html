@@ -1,81 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Venkata Madhav</title>
-        <link rel="shortcut icon" href="/assets/favicon/fav.png" type="image/x-icon" />
-        <link rel="stylesheet" href="/css/style.css" />
-      </head>
-<body>
-    
-    <div class="fix-it">
-        <div class="nav-bar">
-          <div class="nav-bar-rectangle">
-        
-            <a href="./projects.html">Projects</a>
-            <a href="./skills.html">Skills</a>
-            <a href="./about.html">About</a>
-            <a href="./index.html">Home</a>
-            <div id="logo">
-              <a href="https://madhav2133.github.io/"><img src="/assets/favicon/fav.png" alt="logo"></a>
-              <p>Venkata Madhav</p> 
-            </div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Skills and Technologies - Venkata Madhav"
+    />
+    <meta name="keywords" content="robotics engineer, skills, Venkata Madhav" />
+    <meta name="author" content="Venkata Madhav" />
+    <title>Skills | Venkata Madhav</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon/fav.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <div class="nav-bar-rectangle">
+        <div id="logo">
+          <a href="https://madhav2133.github.io/">
+            <img
+              src="/assets/favicon/fav.png"
+              alt="Personal Logo"
+              width="45"
+              height="45"
+            />
+          </a>
+          <p>Venkata Madhav</p>
+        </div>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./skills.html" class="active">Skills</a>
+          <a href="./projects.html">Projects</a>
         </div>
       </div>
+    </nav>
 
-    
     <section class="skills">
-        
-        <div class="main3">
-    
-        <h2>Skills</h2>
-        
+      <div class="main3">
         <div class="skill-chips">
-            <span><img src="/assets/chips/icons8-c++.svg" alt=""></span>
-            <span><img src="/assets/chips/icons8-python.svg" alt=""></span>
-            <span><img src="/assets/chips/icons8-html-5.svg"alt=""></span>
-            <span><img src="/assets/chips/icons8-css3.svg" alt=""></span>
-    
-            <br><br>
-    
-            <span><img src="/assets/chips/icons8-mysql-logo.svg" alt=""></span>
-            <span><img src="/assets/chips/ros.png" alt=""></span>
-            <span><img src="/assets/chips/gazebo.png" alt=""></span>
-    
-            <br><br>
-    
-            <span><img src="/assets/chips/canva.svg" alt=""></span>
-            <span><img src="/assets/chips/icons8-figma 1.svg" alt=""></span>
-            <span><img src="/assets/chips/icons8-adobe-illustrator 1.svg"alt=""></span>
-            <span><img src="/assets/chips/icons8-davinci-resolve 1.svg" alt=""></span>
-    
-            <br><br>
-        </div>
-          
-        </div>
+          <div class="skill-group">
+            <h3>Programming & Development</h3>
+            <span data-skill="C++">
+              <img src="/assets/chips/icons8-c++.svg" alt="C++" title="C++" />
+            </span>
+            <span data-skill="Python">
+              <img
+                src="/assets/chips/icons8-python.svg"
+                alt="Python"
+                title="Python"
+              />
+            </span>
+            <span data-skill="HTML5">
+              <img
+                src="/assets/chips/icons8-html-5.svg"
+                alt="HTML5"
+                title="HTML5"
+              />
+            </span>
+            <span data-skill="CSS3">
+              <img
+                src="/assets/chips/icons8-css3.svg"
+                alt="CSS3"
+                title="CSS3"
+              />
+            </span>
+            <span data-skill="MySQL">
+              <img
+                src="/assets/chips/icons8-mysql-logo.svg"
+                alt="MySQL"
+                title="MySQL"
+              />
+            </span>
+          </div>
 
-        <div class="name-and-contact" style="padding-top: 850px;">
-  
-            <a href="mailto:tadavarthivenkatamadhav@gmail.com"><img src="/assets/svgs/icons8-mail.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/madhav2133" target="_blank"><img src="/assets/svgs/icons8-linkedin.svg" alt=""></a>
-            <a href="https://github.com/Madhav2133" target="_blank"><img src="/assets/svgs/icons8-github.svg" alt=""></a>
-  
+          <div class="skill-group">
+            <h3>Robotics & Tools</h3>
+
+            <span data-skill="Robot Operating System">
+              <img src="/assets/chips/ros.png" alt="ROS" title="ROS" />
+            </span>
+            <span data-skill="Gazebo Simulator">
+              <img src="/assets/chips/gazebo.png" alt="Gazebo" title="Gazebo" />
+            </span>
+          </div>
+
+          <div class="skill-group">
+            <h3>Design & Creative Tools</h3>
+            <span data-skill="Canva">
+              <img src="/assets/chips/canva.svg" alt="Canva" title="Canva" />
+            </span>
+            <span data-skill="Figma">
+              <img
+                src="/assets/chips/icons8-figma 1.svg"
+                alt="Figma"
+                title="Figma"
+              />
+            </span>
+            <span data-skill="Adobe Illustrator">
+              <img
+                src="/assets/chips/icons8-adobe-illustrator 1.svg"
+                alt="Adobe Illustrator"
+                title="Adobe Illustrator"
+              />
+            </span>
+            <span data-skill="DaVinci Resolve">
+              <img
+                src="/assets/chips/icons8-davinci-resolve 1.svg"
+                alt="DaVinci Resolve"
+                title="DaVinci Resolve"
+              />
+            </span>
+          </div>
         </div>
-  
+      </div>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="name-and-contact">
+          <a href="mailto:tadavarthivenkatamadhav@gmail.com">
+            <img
+              src="/assets/svgs/icons8-mail.svg"
+              alt="Email"
+              width="50"
+              height="50"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/madhav2133"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/assets/svgs/icons8-linkedin.svg"
+              alt="LinkedIn"
+              width="50"
+              height="50"
+            />
+          </a>
+          <a
+            href="https://github.com/Madhav2133"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/assets/svgs/icons8-github.svg"
+              alt="GitHub"
+              width="50"
+              height="50"
+            />
+          </a>
+        </div>
         <div class="tandc">
           <p class="copyrights">Designed and created by me ❤️</p>
         </div>
+      </footer>
+    </section>
 
-      </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.add("loaded");
 
-      <script>
-        window.addEventListener("load", function() {
-          document.body.classList.add("loaded");
+        // Handle navigation active state
+        const navLinks = document.querySelectorAll(".nav-links a");
+        navLinks.forEach((link) => {
+          if (link.href === window.location.href) {
+            link.classList.add("active");
+          }
         });
-      </script>
-    
-</body>
+      });
+    </script>
+  </body>
 </html>
