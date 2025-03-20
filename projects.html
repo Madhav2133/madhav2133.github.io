@@ -44,21 +44,13 @@
       <h2 class="section-title">Featured Projects</h2>
 
       <div class="projects-grid">
-        <!--UAV -->
+        <!-- UAV Project -->
         <div class="project-card">
           <div class="project-image">
-            <a href="https://github.com/Madhav2133/fyp.git">
-              <img src="assets/projects/drone.png" alt="UAV" />
-              <div class="project-overlay">
-                <span>View Project</span>
-              </div>
-            </a>
+            <img src="assets/projects/drone.png" alt="UAV" />
           </div>
           <div class="project-content">
-            <h3>
-              Localisation of UAVs in Indoor Corridor Environments using Multi
-              Task Learning and Bezier Curve Optimisation
-            </h3>
+            <h3>Localisation of UAVs in Indoor Corridor Environments</h3>
             <div class="project-tags">
               <span>Robotics</span>
               <span>Computer Vision</span>
@@ -81,15 +73,10 @@
           </div>
         </div>
 
-        <!-- AUV Nemo -->
+        <!-- AUV Nemo Project -->
         <div class="project-card">
           <div class="project-image">
-            <a href="https://auviiitdm.github.io/">
-              <img src="assets/projects/project1.jpg" alt="AUV Nemo" />
-              <div class="project-overlay">
-                <span>View Project</span>
-              </div>
-            </a>
+            <img src="assets/projects/project1.jpg" alt="AUV Nemo" />
           </div>
           <div class="project-content">
             <h3>Autonomous Navigation Planner for AUV Nemo</h3>
@@ -113,15 +100,10 @@
           </div>
         </div>
 
-        <!-- ROV Marty -->
+        <!-- ROV Marty Project -->
         <div class="project-card">
           <div class="project-image">
-            <a href="https://auviiitdm.github.io/">
-              <img src="assets/projects/project2.jpg" alt="ROV Marty" />
-              <div class="project-overlay">
-                <span>View Project</span>
-              </div>
-            </a>
+            <img src="assets/projects/project2.jpg" alt="ROV Marty" />
           </div>
           <div class="project-content">
             <h3>Control System Integration for ROV Marty</h3>
@@ -142,15 +124,10 @@
           </div>
         </div>
 
-        <!-- Traff Analyser -->
+        <!-- Traffic Analyzer Project -->
         <div class="project-card">
           <div class="project-image">
-            <a href="https://github.com/NSVEGUR/traffic-analyzer">
-              <img src="assets/projects/project3.jpg" alt="Traff Analyser" />
-              <div class="project-overlay">
-                <span>View Project</span>
-              </div>
-            </a>
+            <img src="assets/projects/project3.jpg" alt="Traff Analyser" />
           </div>
           <div class="project-content">
             <h3>Traff Analyser</h3>
@@ -173,17 +150,10 @@
           </div>
         </div>
 
-        <!-- TCAS System -->
+        <!-- TCAS System Project -->
         <div class="project-card">
           <div class="project-image">
-            <a
-              href="https://www.linkedin.com/posts/reye_junction-monitoring-system-activity-7099638831695499265-GNUg"
-            >
-              <img src="assets/projects/project0.jpg" alt="TCAS System" />
-              <div class="project-overlay">
-                <span>View Project</span>
-              </div>
-            </a>
+            <img src="assets/projects/project0.jpg" alt="TCAS System" />
           </div>
           <div class="project-content">
             <h3>TCAS System</h3>
@@ -208,18 +178,13 @@
           </div>
         </div>
 
-        <!-- Aquatic Classification -->
+        <!-- Aquatic Classification Project -->
         <div class="project-card">
           <div class="project-image">
-            <a href="https://github.com/Madhav2133/aquatic-classification">
-              <img
-                src="assets/projects/project4.jpg"
-                alt="Aquatic Classification"
-              />
-              <div class="project-overlay">
-                <span>View Project</span>
-              </div>
-            </a>
+            <img
+              src="assets/projects/project4.jpg"
+              alt="Aquatic Classification"
+            />
           </div>
           <div class="project-content">
             <h3>Aquatic Animal Classification</h3>
@@ -266,6 +231,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // Navigation active state
         const currentPage =
           window.location.pathname.split("/").pop() || "index.html";
         const navLinks = document.querySelectorAll(".nav-links a");
@@ -280,6 +246,19 @@
 
         // Add loaded class to body for fade-in effect
         document.body.classList.add("loaded");
+
+        // Project card hover effect
+        const projectCards = document.querySelectorAll(".project-card");
+
+        projectCards.forEach((card) => {
+          card.addEventListener("mouseenter", () => {
+            card.style.transform = "translateY(-10px)";
+          });
+
+          card.addEventListener("mouseleave", () => {
+            card.style.transform = "translateY(0)";
+          });
+        });
       });
     </script>
   </body>
