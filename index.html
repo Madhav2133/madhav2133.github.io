@@ -1,230 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Venkata Madhav - Robotics Engineer Portfolio"
-    />
-    <meta
-      name="keywords"
-      content="robotics engineer, portfolio, Venkata Madhav"
-    />
-    <meta name="author" content="Venkata Madhav" />
 
-    <title>Venkata Madhav | Robotics Engineer</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Venkata Madhav - Robotics Engineer Portfolio" />
+  <meta name="keywords" content="robotics engineer, portfolio, Venkata Madhav" />
+  <meta name="author" content="Venkata Madhav" />
 
-    <link
-      rel="shortcut icon"
-      href="/assets/favicon/fav.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
+  <title>Venkata Madhav | Robotics Engineer</title>
 
-    <!-- Preload critical assets -->
-    <link rel="preload" href="/assets/madhav.jpg" as="image" />
-    <link rel="preload" href="/assets/favicon/fav.png" as="image" />
-  </head>
+  <link rel="shortcut icon" href="/assets/favicon/fav.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/style.css" />
 
-  <body>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-      <div class="nav-bar-rectangle">
-        <div id="logo">
-          <a href="https://madhav2133.github.io/">
-            <img
-              src="/assets/favicon/fav.png"
-              alt="Personal Logo"
-              width="50"
-              height="50"
-            />
-          </a>
-          <p>Venkata Madhav</p>
-        </div>
-        <div class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="./skills.html">Skills</a>
-          <a href="./projects.html">Projects</a>
-        </div>
+  <!-- Preload critical assets -->
+  <link rel="preload" href="/assets/madhav.jpg" as="image" />
+  <link rel="preload" href="/assets/favicon/fav.png" as="image" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <div class="nav-bar-rectangle">
+      <div id="logo">
+        <a href="https://madhav2133.github.io/">
+          <img src="/assets/favicon/fav.png" alt="Personal Logo" width="50" height="50" />
+        </a>
+        <p>Venkata Madhav</p>
       </div>
-    </nav>
-
-    <!-- Main Content -->
-    <section class="opening-page">
-      <main class="main">
-        <div class="container">
-          <div class="photo">
-            <img
-              src="/assets/madhav.jpg"
-              alt="Portrait of Venkata Madhav"
-              width="450"
-              height="450"
-              loading="eager"
-            />
-          </div>
-          <div class="info">
-            <h1 class="name">Hello!</h1>
-            <p id="name">
-              I'm <strong id="name-madhav">Venkata Madhav</strong>
-            </p>
-            <p class="fellow-engineer">Building the future of robotics 🤖</p>
-
-            <!-- Professional Summary -->
-            <div class="professional-summary">
-              <p>
-                Specializing in autonomous systems, computer vision, and
-                multi-robot coordination. Currently pursuing a Master's in
-                Robotics at the University of Maryland, College Park.
-              </p>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="page-icons">
-              <a href="./about.html" aria-label="Learn more about me"
-                >About Me</a
-              >
-              <a href="./projects.html" aria-label="View my projects"
-                >Projects</a
-              >
-              <a href="./skills.html" aria-label="See my skills">Skills</a>
-              <a
-                href="#"
-                class="resume-btn"
-                onclick="openResumeModal(); return false;"
-                >Resume</a
-              >
-            </div>
-          </div>
-        </div>
-      </main>
-    </section>
-
-    <!-- Currently Working Section -->
-    <section class="current-work">
-      <div class="work-container">
-        <h2>Research Interests</h2>
-        <div class="work-items">
-          <div class="work-item">
-            <h3>Underwater Robotics</h3>
-            <p>
-              Enhancing autonomous navigation capabilities for underwater
-              vehicles.
-            </p>
-          </div>
-
-          <div class="work-item">
-            <h3>Perception and Navigation</h3>
-            <p>
-              Developing perception and navigation systems for autonomous
-              vehicles.
-            </p>
-          </div>
-
-          <div class="work-item">
-            <h3>Multi-Robot Systems</h3>
-            <p>
-              Understanding and optimising multi-robot swarms for complex
-              environments.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Modal -->
-    <div id="resumeModal" class="modal">
-      <div class="modal-content">
-        <span class="close-button" onclick="closeResumeModal()">&times;</span>
-        <iframe
-          src="https://drive.google.com/file/d/16j60UoO9FTaRzydHvmHA76axEsJ-MK2O/preview"
-          width="100%"
-          height="100%"
-          allow="autoplay"
-        ></iframe>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./skills.html">Skills</a>
+        <a href="./projects.html">Projects</a>
       </div>
     </div>
+  </nav>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="name-and-contact">
-        <a href="mailto:tadavarthivenkatamadhav@gmail.com">
-          <img
-            src="/assets/svgs/icons8-mail.svg"
-            alt="Email"
-            width="64"
-            height="64"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/madhav2133"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="/assets/svgs/icons8-linkedin.svg"
-            alt="LinkedIn"
-            width="64"
-            height="64"
-          />
-        </a>
-        <a
-          href="https://github.com/Madhav2133"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="/assets/svgs/icons8-github.svg"
-            alt="GitHub"
-            width="64"
-            height="64"
-          />
-        </a>
+  <!-- Main Content -->
+  <section class="opening-page">
+    <main class="main">
+      <div class="container">
+        <div class="photo">
+          <img src="/assets/madhav2.jpg" alt="Portrait of Venkata Madhav" width="450" height="450" loading="eager" />
+        </div>
+        <div class="info">
+          <h1 class="name">Hello!</h1>
+          <p id="name">
+            I'm <strong id="name-madhav">Venkata Madhav</strong>
+          </p>
+          <p class="fellow-engineer">Building the future of robotics 🤖</p>
+
+          <!-- Professional Summary -->
+          <div class="professional-summary">
+            <p>
+              Specializing in autonomous systems, computer vision, and
+              multi-robot coordination. Currently pursuing a Master's in
+              Robotics at the University of Maryland, College Park.
+            </p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="page-icons">
+            <a href="./about.html" aria-label="Learn more about me">About Me</a>
+            <a href="./projects.html" aria-label="View my projects">Projects</a>
+            <a href="./skills.html" aria-label="See my skills">Skills</a>
+            <a href="#" class="resume-btn" onclick="openResumeModal(); return false;">Resume</a>
+          </div>
+        </div>
       </div>
-      <div class="tandc">
-        <p class="copyrights">Designed and created by me ❤️</p>
+    </main>
+  </section>
+
+  <!-- Currently Working Section -->
+  <section class="current-work">
+    <div class="work-container">
+      <h2>Research Interests</h2>
+      <div class="work-items">
+        <div class="work-item">
+          <h3>Underwater Robotics</h3>
+          <p>
+            Enhancing autonomous navigation capabilities for underwater
+            vehicles.
+          </p>
+        </div>
+
+        <div class="work-item">
+          <h3>Perception and Navigation</h3>
+          <p>
+            Developing perception and navigation systems for autonomous
+            vehicles.
+          </p>
+        </div>
+
+        <div class="work-item">
+          <h3>Multi-Robot Systems</h3>
+          <p>
+            Understanding and optimising multi-robot swarms for complex
+            environments.
+          </p>
+        </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.body.classList.add("loaded");
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeResumeModal()">&times;</span>
+      <iframe src="https://drive.google.com/file/d/16j60UoO9FTaRzydHvmHA76axEsJ-MK2O/preview" width="100%" height="100%"
+        allow="autoplay"></iframe>
+    </div>
+  </div>
 
-        // Handle navigation active state
-        const navLinks = document.querySelectorAll(".nav-links a");
-        navLinks.forEach((link) => {
-          if (link.href === window.location.href) {
-            link.classList.add("active");
-          }
-        });
-      });
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="name-and-contact">
+      <a href="mailto:tadavarthivenkatamadhav@gmail.com">
+        <img src="/assets/svgs/icons8-mail.svg" alt="Email" width="64" height="64" />
+      </a>
+      <a href="https://www.linkedin.com/in/madhav2133" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/svgs/icons8-linkedin.svg" alt="LinkedIn" width="64" height="64" />
+      </a>
+      <a href="https://github.com/Madhav2133" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/svgs/icons8-github.svg" alt="GitHub" width="64" height="64" />
+      </a>
+    </div>
+    <div class="tandc">
+      <p class="copyrights">Designed and created by me ❤️</p>
+    </div>
+  </footer>
 
-      // Resume Modal Functions
-      function openResumeModal() {
-        document.getElementById("resumeModal").style.display = "block";
-        document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
-      }
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.classList.add("loaded");
 
-      function closeResumeModal() {
-        document.getElementById("resumeModal").style.display = "none";
-        document.body.style.overflow = "auto"; // Restore scrolling
-      }
-
-      // Close modal when clicking outside
-      window.onclick = function (event) {
-        const modal = document.getElementById("resumeModal");
-        if (event.target === modal) {
-          closeResumeModal();
+      // Handle navigation active state
+      const navLinks = document.querySelectorAll(".nav-links a");
+      navLinks.forEach((link) => {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
         }
-      };
-
-      // Close modal with Escape key
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") {
-          closeResumeModal();
-        }
       });
-    </script>
-  </body>
+    });
+
+    // Resume Modal Functions
+    function openResumeModal() {
+      document.getElementById("resumeModal").style.display = "block";
+      document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+    }
+
+    function closeResumeModal() {
+      document.getElementById("resumeModal").style.display = "none";
+      document.body.style.overflow = "auto"; // Restore scrolling
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function (event) {
+      const modal = document.getElementById("resumeModal");
+      if (event.target === modal) {
+        closeResumeModal();
+      }
+    };
+
+    // Close modal with Escape key
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeResumeModal();
+      }
+    });
+  </script>
+</body>
+
 </html>
