@@ -542,11 +542,53 @@ h2 {
 
 .about-me {
   min-height: calc(100vh - 64px);
-  padding-top: 100px; /* Reduced from 120px */
+  padding-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 20px;
+}
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 60px;
+  padding: 0 32px;
+}
+
+.about-portrait {
+  flex: 0 0 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-portrait img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 15px 35px rgba(59, 139, 235, 0.3);
+  border: 4px solid rgba(59, 139, 235, 0.15);
+}
+
+.about-summary {
+  flex: 1;
+  max-width: 640px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-summary p {
+  margin: 0;
 }
 
 .section-title {
@@ -1113,6 +1155,26 @@ main {
   .nav-links a.active {
     background: rgba(59, 139, 235, 0.15);
   }
+
+  .about-hero {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .about-summary {
+    max-width: 720px;
+    align-items: center;
+  }
+
+  .about-summary p {
+    text-align: center;
+  }
+
+  .about-portrait {
+    flex: 0 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1187,6 +1249,21 @@ main {
   #logo p {
     font-size: 1.05rem;
   }
+
+  .about-hero {
+    gap: 28px;
+    padding: 0 20px;
+  }
+
+  .about-portrait img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .about-summary {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1257,6 +1334,21 @@ main {
 
   #logo p {
     font-size: 0.95rem;
+  }
+
+  .about-hero {
+    padding: 0 16px;
+    gap: 24px;
+  }
+
+  .about-portrait img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .about-summary {
+    font-size: 1rem;
+    gap: 20px;
   }
 }
 
