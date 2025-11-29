@@ -44,10 +44,20 @@
   <main class="projects">
     <h2 class="section-title">Featured Projects</h2>
 
+    <!-- Filter Navigation -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="perception">Perception</button>
+      <button class="filter-btn" data-filter="planning">Planning</button>
+      <button class="filter-btn" data-filter="controls">Controls</button>
+      <button class="filter-btn" data-filter="ml-dl">ML & DL</button>
+      <button class="filter-btn" data-filter="general">General</button>
+    </div>
+
     <div class="projects-grid">
 
       <!-- ENAE788O Multi-Robot Swarms -->
-      <div class="project-card">
+      <div class="project-card" data-category="controls planning">
         <div class="project-image">
           <img src="assets/projects/sar_for_compare.png" alt="multi-robot-swarms" />
         </div>
@@ -69,7 +79,7 @@
       </div>
 
       <!-- ENPM673 - Perception -->
-      <div class="project-card">
+      <div class="project-card" data-category="perception">
         <div class="project-image">
           <img src="assets/projects/turtlebot4.jpg" alt="turtlebot4" />
         </div>
@@ -94,7 +104,7 @@
       </div>
 
       <!-- ENPM661 - Planning -->
-      <div class="project-card">
+      <div class="project-card" data-category="planning">
         <div class="project-image">
           <img src="assets/projects/turtlebot4.jpg" alt="turtlebot4" />
         </div>
@@ -120,7 +130,7 @@
       </div>
 
       <!-- UAV Project -->
-      <div class="project-card">
+      <div class="project-card" data-category="perception ml-dl planning">
         <div class="project-image">
           <img src="assets/projects/drone.png" alt="UAV" />
         </div>
@@ -144,8 +154,30 @@
         </div>
       </div>
 
+      <!-- Coral Reef Health Analysis Project -->
+      <div class="project-card" data-category="ml-dl general">
+        <div class="project-image">
+          <img src="assets/projects/bleached.png" alt="Coral Reef Health Analysis" />
+        </div>
+        <div class="project-content">
+          <h3>Analysis of Underwater Coral Reef Health Using Neural Networks</h3>
+          <div class="project-tags">
+            <span>YOLOV8</span>
+            <span>Coral Reefs</span>
+            <span>CNN</span>
+            <span>Underwater Robotics</span>
+          </div>
+          <p>
+            This study showcases the implementation of the YOLOv8 CNN model for automated coral health assessment. The model classifies coral into three categories, achieving an accuracy of 78%.
+          </p>
+          <div class="project-links">
+            <a href="https://ieeexplore.ieee.org/document/10682334" class="project-link">Publication</a>
+          </div>
+        </div>
+      </div>
+
       <!-- AUV Nemo Project -->
-      <div class="project-card">
+      <div class="project-card" data-category="planning perception">
         <div class="project-image">
           <img src="assets/projects/project1.jpg" alt="AUV Nemo" />
         </div>
@@ -170,7 +202,7 @@
       </div>
 
       <!-- ROV Marty Project -->
-      <div class="project-card">
+      <div class="project-card" data-category="controls perception planning">
         <div class="project-image">
           <img src="assets/projects/project2.jpg" alt="ROV Marty" />
         </div>
@@ -191,8 +223,72 @@
         </div>
       </div>
 
+      <!-- PID Controller Implementation Project -->
+      <div class="project-card" data-category="controls general">
+        <div class="project-image">
+          <img src="assets/projects/984771_poster.webp" alt="PID Controller Implementation" />
+        </div>
+        <div class="project-content">
+          <h3>PID Controller Implementation</h3>
+          <div class="project-tags">
+            <span>C++</span>
+            <span>PID</span>
+            <span>Controls</span>
+          </div>
+          <p>
+            This project implements a PID (Proportional-Integral-Derivative) controller for Acme Robotics' mobile robot platform.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/mdevhurt1/enpm700_test_driven_development_exercise.git" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RRT* Path Planning Project -->
+      <div class="project-card" data-category="planning general">
+        <div class="project-image">
+          <img src="assets/projects/output1.png" alt="RRT* Path Planning" />
+        </div>
+        <div class="project-content">
+          <h3>Efficient Path Planning for Autonomous Vehicles based on RRT* with Variable Probability Strategy and Artificial Potential Field Approach</h3>
+          <div class="project-tags">
+            <span>APF</span>
+            <span>RRT*</span>
+            <span>Planning</span>
+            <span>Python</span>
+          </div>
+          <p>
+            This project is a successful implementation of the Improved A-RRT* path planning algorithm in a 2D grid-based simulation environment using Python and OpenCV.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/enpm661_proj5.git" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BFS & Dijkstra Path Planning Project -->
+      <div class="project-card" data-category="planning general">
+        <div class="project-image">
+          <img src="assets/projects/Workspace.png" alt="BFS & Dijkstra Path Planning" />
+        </div>
+        <div class="project-content">
+          <h3>BFS & Dijkstra Algorithm for Path Planning</h3>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Heap DS</span>
+          </div>
+          <p>
+            This project implements BFS and Dijkstra's algorithm for path planning a point robot in a 2D workspace with obstacles. The obstacles are represented by the text "ENPM661" with a clearance of 2mm.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/enpm661-proj2.git" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
       <!-- Traffic Analyzer Project -->
-      <div class="project-card">
+      <div class="project-card" data-category="ml-dl">
         <div class="project-image">
           <img src="assets/projects/project3.jpg" alt="Traff Analyser" />
         </div>
@@ -214,7 +310,7 @@
       </div>
 
       <!-- TCAS System Project -->
-      <div class="project-card">
+      <div class="project-card" data-category="planning">
         <div class="project-image">
           <img src="assets/projects/project0.jpg" alt="TCAS System" />
         </div>
@@ -239,7 +335,7 @@
       </div>
 
       <!-- Aquatic Classification Project -->
-      <div class="project-card">
+      <div class="project-card" data-category="ml-dl">
         <div class="project-image">
           <img src="assets/projects/project4.jpg" alt="Aquatic Classification" />
         </div>
@@ -260,6 +356,28 @@
           </div>
         </div>
       </div>
+
+      <!-- Face Detection Application Project -->
+      <div class="project-card" data-category="general">
+        <div class="project-image">
+          <img src="assets/projects/cat_face_detector_result_04.webp" alt="Face Detection Application" />
+        </div>
+        <div class="project-content">
+          <h3>Face Detection Application</h3>
+          <div class="project-tags">
+            <span>OpenCV</span>
+            <span>Python</span>
+            <span>Flask</span>
+          </div>
+          <p>
+            A basic face detection application built using Flask and Haar Cascade Face Detection using Python.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/wall-e.git" class="project-link">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
@@ -357,6 +475,46 @@
 
         card.addEventListener("mouseleave", () => {
           card.style.transform = "translateY(0)";
+        });
+      });
+
+      // Project filtering functionality
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const projectsGrid = document.querySelector(".projects-grid");
+      const allProjectCards = document.querySelectorAll(".project-card");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Remove active class from all buttons
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          
+          // Add active class to clicked button
+          button.classList.add("active");
+
+          const filterValue = button.getAttribute("data-filter");
+
+          // Filter projects
+          let visibleIndex = 0;
+          allProjectCards.forEach((card) => {
+            const categories = card.getAttribute("data-category");
+            
+            if (filterValue === "all" || (categories && categories.includes(filterValue))) {
+              // Show card with fade-in animation
+              card.style.display = "flex";
+              setTimeout(() => {
+                card.style.opacity = "1";
+              }, visibleIndex * 30);
+              visibleIndex++;
+            } else {
+              // Hide card with fade-out animation
+              card.style.opacity = "0";
+              setTimeout(() => {
+                if (card.style.opacity === "0") {
+                  card.style.display = "none";
+                }
+              }, 300);
+            }
+          });
         });
       });
     });
