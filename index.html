@@ -11,6 +11,7 @@
   <title>Venkata Madhav | Robotics Engineer</title>
 
   <link rel="shortcut icon" href="/assets/favicon/fav.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/global.css" />
   <link rel="stylesheet" href="/css/style.css" />
 
   <!-- Preload critical assets -->
@@ -23,11 +24,11 @@
   <nav class="nav-bar">
     <div class="nav-bar-rectangle">
       <div id="logo">
-        <a href="https://madhav2133.github.io/">
+        <a href="#home">
           <img src="/assets/favicon/fav.png" alt="Personal Logo" width="50" height="50">
         </a>
-        <a href="https://madhav2133.github.io/" style="text-decoration: none;">
-        <p>Venkata Madhav</p>
+        <a href="#home" style="text-decoration: none;">
+          <p>Venkata Madhav</p>
         </a>
       </div>
       <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +37,17 @@
         <span class="burger"></span>
       </button>
       <div class="nav-links" id="primary-navigation">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./skills.html">Skills</a>
-        <a href="./projects.html">Projects</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <section class="opening-page">
+  <!-- Home Section -->
+  <section id="home" class="opening-page">
     <main class="main">
       <div class="container">
         <div class="photo">
@@ -69,9 +71,9 @@
 
           <!-- Action Buttons -->
           <div class="page-icons">
-            <a href="./about.html" aria-label="Learn more about me">About Me</a>
-            <a href="./projects.html" aria-label="View my projects">Projects</a>
-            <a href="./skills.html" aria-label="See my skills">Skills</a>
+            <a href="#about" aria-label="Learn more about me">About Me</a>
+            <a href="#projects" aria-label="View my projects">Projects</a>
+            <a href="#skills" aria-label="See my skills">Skills</a>
             <a href="#" class="resume-btn" onclick="openResumeModal(); return false;">Resume</a>
           </div>
         </div>
@@ -79,10 +81,21 @@
     </main>
   </section>
 
-  <!-- Currently Working Section -->
-  <section class="current-work">
+  <!-- About Section -->
+  <section id="about" class="about-me">
+    <div class="about-hero">
+      <div class="about-summary">
+        <p>
+          I am a Master of Engineering student in Robotics at the University of Maryland, College Park. I specialize in software-driven robotics, including ROS1&2, C++, Python, and Gazebo. My passion lies in underwater and aerial robotics, focusing on control, planning, and perception.
+        </p>
+        <p>
+          I enjoy solving complex problems in autonomous systems and have hands-on experience with autonomous underwater vehicles, robotic manipulators, and multi-robot systems.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Research Interests</h2>
     <div class="work-container">
-      <h2>Research Interests</h2>
       <div class="work-items">
         <div class="work-item">
           <h3>Underwater Robotics</h3>
@@ -93,9 +106,9 @@
         </div>
 
         <div class="work-item">
-          <h3>Perception and Navigation</h3>
+          <h3>Perception and Planning</h3>
           <p>
-            Developing perception and navigation systems for autonomous
+            Developing perception systems for autonomous
             vehicles.
           </p>
         </div>
@@ -106,6 +119,573 @@
             Understanding and optimising multi-robot swarms for complex
             environments.
           </p>
+        </div>
+
+        <div class="work-item">
+          <h3>Controls</h3>
+          <p>
+            Designing and implementing control systems for robotic platforms and autonomous vehicles.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Education</h2>
+    <div class="education-container">
+      <div class="education-card education-card-full">
+        <h3>University of Maryland, College Park</h3>
+        <p class="degree">Master of Engineering, Robotics</p>
+        <p class="address">College Park, MD, USA</p>
+        <div class="courses">
+          <span class="courses-label">Courses:</span>
+          <div class="course-chips">
+            <span class="course-chip">Robot Modeling</span>
+            <span class="course-chip">Controls System</span>
+            <span class="course-chip">Deep Learning & AI</span>
+            <span class="course-chip">Software Development for Robotics</span>
+            <span class="course-chip">Perception</span>
+            <span class="course-chip">Planning</span>
+            <span class="course-chip">Multi-Robot Swarms</span>
+            <span class="course-chip">Rehabilitation Robotics</span>
+            <span class="course-chip">On-Road Automated Vehicles</span>
+          </div>
+        </div>
+        <p class="year">Fall 2024 - Spring 2026</p>
+        <p class="grade">CGPA: 3.67/4</p>
+      </div>
+
+      <div class="education-card">
+        <h3>IIITDM Kancheepuram</h3>
+        <p class="degree">BTech, CSE</p>
+        <p class="address">Kancheepuram, Chennai, India</p>
+        <p class="year">2020-2024</p>
+        <p class="grade">CGPA: 8.97/10</p>
+      </div>
+
+      <div class="education-card">
+        <h3>FIITJEE Junior College</h3>
+        <p class="degree">Intermediate</p>
+        <p class="address">Visakhapatnam, India</p>
+        <p class="year">2018-2020</p>
+        <p class="grade">CGPA: 9.94/10</p>
+      </div>
+
+      <div class="education-card">
+        <h3>St. Joseph's E.M.H. School</h3>
+        <p class="degree">High School</p>
+        <p class="address">Vizianagaram, India</p>
+        <p class="year">2018</p>
+        <p class="grade">CGPA: 10.0/10.0</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Publications</h2>
+    <div class="publications-container">
+      <div class="publication-card">
+        <p class="authors">Venkata Madhav, T. Vyshnav, K. and Soorya, R.</p>
+        <h3 class="paper-title">
+          "Analysis of Underwater Coral Reef Health Using Neural Networks"
+        </h3>
+        <p class="conference">IEEE OCEANS 2024 Conference, Singapore</p>
+        <a href="https://doi.org/10.1109/OCEANS51537.2024.10682334" class="doi-link" target="_blank"
+          rel="noopener noreferrer">
+          <span class="doi-icon">📄</span>
+          View Publication
+        </a>
+      </div>
+    </div>
+
+    <h2 class="section-title">Awards & Achievements</h2>
+    <div class="achievements-container">
+      <div class="achievement-card">
+        <div class="achievement-icon">🏆</div>
+        <p>
+          Presented a paper at the prestigious IEEE OCEANS 2024 Conference at
+          Singapore.
+        </p>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">🏅</div>
+        <p>
+          My team got shortlisted to participate in the MATE-ROV World
+          Championship both in the year 2022 and 2023.
+        </p>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">🎯</div>
+        <p>
+          My team was among the top 20 teams in the SAUVC Competition 2022,
+          which was held in Singapore.
+        </p>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">🥇</div>
+        <p>
+          Selected as one of the top 30 teams for the 2022 VRX Competition.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <!-- Filter Navigation -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="perception">Perception</button>
+      <button class="filter-btn" data-filter="planning">Planning</button>
+      <button class="filter-btn" data-filter="controls">Controls</button>
+      <button class="filter-btn" data-filter="ml-dl">ML & DL</button>
+      <button class="filter-btn" data-filter="general">General</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- ENAE788O Multi-Robot Swarms -->
+      <div class="project-card" data-category="controls planning">
+        <div class="project-image">
+          <img src="assets/projects/sar_for_compare.png" alt="multi-robot-swarms" />
+        </div>
+        <div class="project-content">
+          <h3>Bio-Inspired Swarm Flocking with Minimal Communication for Adaptive Search Operations</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Multi-Robot Swarms</span>
+          </div>
+          <p>
+            This project aims to develop an autonomous surface swarm system with bio-inspired flocking for search tasks, with adaptive formation control in a simulated ocean environment using a decentralized control system to enable minimal communication while maintaining coordination.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/enae788o-finalproj.git" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+            <a href="https://github.com/Madhav2133/enae788o-finalproj/blob/main/ENAE788O_Final_Project.pdf"
+              class="project-link" target="_blank" rel="noopener noreferrer">Project Report</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENPM673 - Perception -->
+      <div class="project-card" data-category="perception">
+        <div class="project-image">
+          <img src="assets/projects/turtlebot4.jpg" alt="turtlebot4" />
+        </div>
+        <div class="project-content">
+          <h3>Perception for Turtlebot4</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Computer Vision</span>
+            <span>Autonomous Systems</span>
+            <span>ROS2</span>
+            <span>Gazebo</span>
+          </div>
+          <p>
+            This project involved multiple perception challenges to successfully navigate a robot through a given environment with ArUco markers and different obstacle scenarios. 
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/siddhant-code/turtlebot4_perception_control.git" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+            <a href="https://drive.google.com/file/d/1yOi-ouwWe2deRw3nPhxT0nbd5nVDn5lQ/view?usp=sharing"
+              class="project-link" target="_blank" rel="noopener noreferrer">Checkout this video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENPM661 - Planning -->
+      <div class="project-card" data-category="planning">
+        <div class="project-image">
+          <img src="assets/projects/turtlebot4.jpg" alt="turtlebot4" />
+        </div>
+        <div class="project-content">
+          <h3>Path Planning for Turtlebot4</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Computer Vision</span>
+            <span>Autonomous Systems</span>
+            <span>ROS2</span>
+            <span>Gazebo</span>
+          </div>
+          <p>
+            A course project that involved developing an A* path planning algorithm for the Turtlebot4 to navigate in an
+            given environment. Designed for both simulation and hardware!
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/siddhant-code/PathPlanning.git" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+            <a href="https://drive.google.com/file/d/122KWCe59NhgOqg3yI2bdOrMWIu5QqHXB/view?usp=sharing"
+              class="project-link" target="_blank" rel="noopener noreferrer">Checkout this video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- UAV Project -->
+      <div class="project-card" data-category="perception ml-dl planning">
+        <div class="project-image">
+          <img src="assets/projects/drone.png" alt="UAV" />
+        </div>
+        <div class="project-content">
+          <h3>Localisation of UAVs in Indoor Corridor Environments</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Computer Vision</span>
+            <span>Autonomous Systems</span>
+            <span>Bezier Curve</span>
+            <span>Multi-Task Learning</span>
+          </div>
+          <p>
+            Developed GPS-free localization for UAVs in indoor environments,
+            enabling precise path following with minimal deviation in
+            translation and orientation.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/fyp.git" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coral Reef Health Analysis Project -->
+      <div class="project-card" data-category="ml-dl general">
+        <div class="project-image">
+          <img src="assets/projects/bleached.png" alt="Coral Reef Health Analysis" />
+        </div>
+        <div class="project-content">
+          <h3>Analysis of Underwater Coral Reef Health Using Neural Networks</h3>
+          <div class="project-tags">
+            <span>YOLOV8</span>
+            <span>Coral Reefs</span>
+            <span>CNN</span>
+            <span>Underwater Robotics</span>
+          </div>
+          <p>
+            This study showcases the implementation of the YOLOv8 CNN model for automated coral health assessment. The model classifies coral into three categories, achieving an accuracy of 78%.
+          </p>
+          <div class="project-links">
+            <a href="https://ieeexplore.ieee.org/document/10682334" class="project-link" target="_blank" rel="noopener noreferrer">Publication</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AUV Nemo Project -->
+      <div class="project-card" data-category="planning perception">
+        <div class="project-image">
+          <img src="assets/projects/project1.jpg" alt="AUV Nemo" />
+        </div>
+        <div class="project-content">
+          <h3>Autonomous Navigation Planner for AUV Nemo</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Computer Vision</span>
+            <span>Autonomous Underwater Vehicle</span>
+            <span>ROS</span>
+            <span>Gazebo</span>
+          </div>
+          <p>
+            Developed an Autonomous Underwater Vehicle with 6 DOF featuring 3D
+            Visualised Oak-D Series 3 Camera for autonomous navigation in
+            SAUVC 2022, Singapore.
+          </p>
+          <div class="project-links">
+            <a href="https://auviiitdm.github.io/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROV Marty Project -->
+      <div class="project-card" data-category="controls perception planning">
+        <div class="project-image">
+          <img src="assets/projects/project2.jpg" alt="ROV Marty" />
+        </div>
+        <div class="project-content">
+          <h3>Control System Integration for ROV Marty</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Control Systems</span>
+            <span>Hybrid Vehicle</span>
+          </div>
+          <p>
+            Developed a hybrid vehicle capable of operating as both AUV and
+            ROV for the MATE-ROV World Championship 2023.
+          </p>
+          <div class="project-links">
+            <a href="https://auviiitdm.github.io/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PID Controller Implementation Project -->
+      <div class="project-card" data-category="controls general">
+        <div class="project-image">
+          <img src="assets/projects/984771_poster.webp" alt="PID Controller Implementation" />
+        </div>
+        <div class="project-content">
+          <h3>PID Controller Implementation</h3>
+          <div class="project-tags">
+            <span>C++</span>
+            <span>PID</span>
+            <span>Controls</span>
+          </div>
+          <p>
+            This project implements a PID (Proportional-Integral-Derivative) controller for Acme Robotics' mobile robot platform.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/mdevhurt1/enpm700_test_driven_development_exercise.git" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RRT* Path Planning Project -->
+      <div class="project-card" data-category="planning general">
+        <div class="project-image">
+          <img src="assets/projects/output1.png" alt="RRT* Path Planning" />
+        </div>
+        <div class="project-content">
+          <h3>Efficient Path Planning for Autonomous Vehicles based on RRT* with Variable Probability Strategy and Artificial Potential Field Approach</h3>
+          <div class="project-tags">
+            <span>APF</span>
+            <span>RRT*</span>
+            <span>Planning</span>
+            <span>Python</span>
+          </div>
+          <p>
+            This project is a successful implementation of the Improved A-RRT* path planning algorithm in a 2D grid-based simulation environment using Python and OpenCV.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/enpm661_proj5.git" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BFS & Dijkstra Path Planning Project -->
+      <div class="project-card" data-category="planning general">
+        <div class="project-image">
+          <img src="assets/projects/Workspace.png" alt="BFS & Dijkstra Path Planning" />
+        </div>
+        <div class="project-content">
+          <h3>BFS & Dijkstra Algorithm for Path Planning</h3>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Heap DS</span>
+          </div>
+          <p>
+            This project implements BFS and Dijkstra's algorithm for path planning a point robot in a 2D workspace with obstacles. The obstacles are represented by the text "ENPM661" with a clearance of 2mm.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/enpm661-proj2.git" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Traffic Analyzer Project -->
+      <div class="project-card" data-category="ml-dl">
+        <div class="project-image">
+          <img src="assets/projects/project3.jpg" alt="Traff Analyser" />
+        </div>
+        <div class="project-content">
+          <h3>Traff Analyser</h3>
+          <div class="project-tags">
+            <span>CNN</span>
+            <span>Data Analysis</span>
+            <span>Traffic Patterns</span>
+          </div>
+          <p>
+            Analyzes traffic conditions using sensor data to predict traffic
+            trends at different junctions using a CNN model.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/NSVEGUR/traffic-analyzer" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TCAS System Project -->
+      <div class="project-card" data-category="planning">
+        <div class="project-image">
+          <img src="assets/projects/project0.jpg" alt="TCAS System" />
+        </div>
+        <div class="project-content">
+          <h3>TCAS System</h3>
+          <div class="project-tags">
+            <span>ROS2</span>
+            <span>Gazebo</span>
+            <span>C++/Python</span>
+            <span>Nav2</span>
+          </div>
+          <p>
+            Multi-robot monitoring system that identifies potential junction
+            regions where robots might converge and regulates their passage to
+            prevent close proximity interactions.
+          </p>
+          <div class="project-links">
+            <a href="https://www.linkedin.com/posts/reye_junction-monitoring-system-activity-7099638831695499265-GNUg"
+              class="project-link" target="_blank" rel="noopener noreferrer">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aquatic Classification Project -->
+      <div class="project-card" data-category="ml-dl">
+        <div class="project-image">
+          <img src="assets/projects/project4.jpg" alt="Aquatic Classification" />
+        </div>
+        <div class="project-content">
+          <h3>Aquatic Animal Classification</h3>
+          <div class="project-tags">
+            <span>Deep Learning</span>
+            <span>MobileNetV2</span>
+            <span>ResNet50V2</span>
+          </div>
+          <p>
+            Implemented three Deep Learning Models for aquatic animal
+            classification, comparing accuracy outcomes and creating a web
+            application classifier.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/aquatic-classification" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Face Detection Application Project -->
+      <div class="project-card" data-category="general">
+        <div class="project-image">
+          <img src="assets/projects/cat_face_detector_result_04.webp" alt="Face Detection Application" />
+        </div>
+        <div class="project-content">
+          <h3>Face Detection Application</h3>
+          <div class="project-tags">
+            <span>OpenCV</span>
+            <span>Python</span>
+            <span>Flask</span>
+          </div>
+          <p>
+            A basic face detection application built using Flask and Haar Cascade Face Detection using Python.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/wall-e.git" class="project-link" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="main3">
+      <!-- Introduction Section -->
+      <div class="skills-intro">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="skills-description">
+          As a Robotics Engineer, I specialize in developing autonomous systems and robotic solutions. My expertise spans across programming, robotics frameworks, and creative tools, enabling me to build innovative solutions for complex challenges in underwater and aerial robotics.
+        </p>
+      </div>
+
+      <div class="skill-chips">
+        <!-- Programming & Development -->
+        <div class="skill-group">
+          <h3>Programming & Development</h3>
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <span data-skill="C++">
+              <img src="/assets/chips/icons8-c++.svg" alt="C++" title="C++" />
+            </span>
+            <span data-skill="Python">
+              <img src="/assets/chips/icons8-python.svg" alt="Python" title="Python" />
+            </span>
+          </div>
+          <div class="skill-category">
+            <h4>Web Development</h4>
+            <span data-skill="HTML5">
+              <img src="/assets/chips/icons8-html-5.svg" alt="HTML5" title="HTML5" />
+            </span>
+            <span data-skill="CSS3">
+              <img src="/assets/chips/icons8-css3.svg" alt="CSS3" title="CSS3" />
+            </span>
+          </div>
+          <div class="skill-category">
+            <h4>Database</h4>
+            <span data-skill="MySQL">
+              <img src="/assets/chips/icons8-mysql-logo.svg" alt="MySQL" title="MySQL" />
+            </span>
+          </div>
+        </div>
+
+        <!-- Robotics & Tools -->
+        <div class="skill-group">
+          <h3>Robotics & Tools</h3>
+          <div class="skill-category">
+            <h4>Frameworks</h4>
+            <span data-skill="Robot Operating System">
+              <img src="/assets/chips/ros.png" alt="ROS" title="ROS" />
+            </span>
+            <span data-skill="ROS2">
+              <img src="/assets/svgs/ros2.svg" alt="ROS2" title="ROS2" />
+            </span>
+          </div>
+          <div class="skill-category">
+            <h4>Simulation & Development</h4>
+            <div style="display: flex; justify-content: center">
+              <span data-skill="Gazebo Simulator">
+                <img src="/assets/chips/gazebo.png" alt="Gazebo" title="Gazebo" />
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="skill-group">
+          <h3>AI & Machine Learning</h3>
+          <div class="skill-category">
+            <h4>Frameworks</h4>
+            <span data-skill="TensorFlow">TensorFlow</span>
+            <span data-skill="PyTorch">PyTorch</span>
+          </div>
+          <div class="skill-category">
+            <h4>Technologies</h4>
+            <span data-skill="Computer Vision">Computer Vision</span>
+            <span data-skill="Deep Learning">Deep Learning</span>
+          </div>
+        </div>
+
+        <!-- Design & Creative Tools -->
+        <div class="skill-group">
+          <h3>Design & Creative Tools</h3>
+          <div class="skill-category">
+            <h4>Design Tools</h4>
+            <span data-skill="Canva">
+              <img src="/assets/chips/canva.svg" alt="Canva" title="Canva" />
+            </span>
+            <span data-skill="Figma">
+              <img src="/assets/chips/icons8-figma 1.svg" alt="Figma" title="Figma" />
+            </span>
+            <span data-skill="Adobe Illustrator">
+              <img src="/assets/chips/icons8-adobe-illustrator 1.svg" alt="Adobe Illustrator" title="Adobe Illustrator" />
+            </span>
+          </div>
+          <div class="skill-category">
+            <h4>Media Production</h4>
+            <span data-skill="DaVinci Resolve">
+              <img src="/assets/chips/icons8-davinci-resolve 1.svg" alt="DaVinci Resolve" title="DaVinci Resolve" />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Section -->
+      <div class="certifications">
+        <h3>Certifications & Achievements</h3>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <h4>MTS EMERGE Cohort</h4>
+            <p>MTS EMERGE Cohort</p>
+          </div>
+          <div class="cert-item">
+            <h4>ROS Development</h4>
+            <p>ROS Certified Developer</p>
+          </div>
+          <div class="cert-item">
+            <h4>Robotics</h4>
+            <p>SAUVC 2022 Finalist</p>
+          </div>
         </div>
       </div>
     </div>
@@ -120,8 +700,16 @@
     </div>
   </div>
 
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer id="contact" class="site-footer">
+    <h2 class="section-title">Contact</h2>
     <div class="name-and-contact">
       <a href="mailto:tadavarthivenkatamadhav@gmail.com">
         <img src="/assets/svgs/icons8-mail.svg" alt="Email" width="64" height="64" />
@@ -142,13 +730,62 @@
     document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("loaded");
 
-      // Handle navigation active state
-      const navLinks = document.querySelectorAll(".nav-links a");
-      navLinks.forEach((link) => {
-        if (link.href === window.location.href) {
-          link.classList.add("active");
-        }
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href === '#' || href === '#home') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+          }
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            const offsetTop = target.offsetTop - 90; // Account for fixed nav
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            const navLinksContainer = document.querySelector(".nav-links");
+            const navToggle = document.querySelector(".nav-toggle");
+            if (navLinksContainer && navLinksContainer.classList.contains("open")) {
+              navLinksContainer.classList.remove("open");
+              navToggle.classList.remove("open");
+              navToggle.setAttribute("aria-expanded", "false");
+              document.body.classList.remove("nav-open");
+            }
+          }
+        });
       });
+
+      // Update active nav link on scroll
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      function updateActiveNav() {
+        const scrollPosition = window.scrollY + 120;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute('id');
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveNav);
+      updateActiveNav(); // Initial check
 
       // Mobile navigation toggle
       const navToggle = document.querySelector(".nav-toggle");
@@ -200,32 +837,119 @@
           }
         });
       }
-    });
 
-    // Resume Modal Functions
-    function openResumeModal() {
-      document.getElementById("resumeModal").style.display = "block";
-      document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
-    }
-
-    function closeResumeModal() {
-      document.getElementById("resumeModal").style.display = "none";
-      document.body.style.overflow = "auto"; // Restore scrolling
-    }
-
-    // Close modal when clicking outside
-    window.onclick = function (event) {
-      const modal = document.getElementById("resumeModal");
-      if (event.target === modal) {
-        closeResumeModal();
+      // Resume Modal Functions
+      function openResumeModal() {
+        document.getElementById("resumeModal").style.display = "block";
+        document.body.style.overflow = "hidden";
       }
-    };
 
-    // Close modal with Escape key
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
-        closeResumeModal();
+      window.openResumeModal = openResumeModal;
+
+      function closeResumeModal() {
+        document.getElementById("resumeModal").style.display = "none";
+        document.body.style.overflow = "auto";
       }
+
+      window.closeResumeModal = closeResumeModal;
+
+      // Close modal when clicking outside
+      window.onclick = function (event) {
+        const modal = document.getElementById("resumeModal");
+        if (event.target === modal) {
+          closeResumeModal();
+        }
+      };
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeResumeModal();
+        }
+      });
+
+      // Project card hover effect
+      const projectCards = document.querySelectorAll(".project-card");
+
+      projectCards.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.style.transform = "translateY(-10px)";
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "translateY(0)";
+        });
+      });
+
+      // Project filtering functionality
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const allProjectCards = document.querySelectorAll(".project-card");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Remove active class from all buttons
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          
+          // Add active class to clicked button
+          button.classList.add("active");
+
+          const filterValue = button.getAttribute("data-filter");
+
+          // Filter projects
+          let visibleIndex = 0;
+          allProjectCards.forEach((card) => {
+            const categories = card.getAttribute("data-category");
+            
+            if (filterValue === "all" || (categories && categories.includes(filterValue))) {
+              // Show card with fade-in animation
+              card.style.display = "flex";
+              setTimeout(() => {
+                card.style.opacity = "1";
+              }, visibleIndex * 30);
+              visibleIndex++;
+            } else {
+              // Hide card with fade-out animation
+              card.style.opacity = "0";
+              setTimeout(() => {
+                if (card.style.opacity === "0") {
+                  card.style.display = "none";
+                }
+              }, 300);
+            }
+          });
+        });
+      });
+
+      // Add hover effect for skill chips
+      const skillChips = document.querySelectorAll(".skill-chips span");
+      skillChips.forEach((chip) => {
+        chip.addEventListener("mouseenter", () => {
+          chip.style.transform = "translateY(-5px)";
+        });
+        chip.addEventListener("mouseleave", () => {
+          chip.style.transform = "translateY(0)";
+        });
+      });
+
+      // Scroll to Top Button
+      const scrollToTopButton = document.getElementById('scrollToTop');
+      
+      // Show/hide button based on scroll position
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          scrollToTopButton.classList.add('visible');
+        } else {
+          scrollToTopButton.classList.remove('visible');
+        }
+      });
+
+      // Scroll to top when button is clicked
+      scrollToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
     });
   </script>
 </body>
