@@ -238,11 +238,123 @@
       <button class="filter-btn" data-filter="perception">Perception</button>
       <button class="filter-btn" data-filter="planning">Planning</button>
       <button class="filter-btn" data-filter="controls">Controls</button>
+      <button class="filter-btn" data-filter="simulation">Simulation</button>
       <button class="filter-btn" data-filter="ml-dl">ML & DL</button>
       <button class="filter-btn" data-filter="general">General</button>
     </div>
 
     <div class="projects-grid">
+
+      <!-- Fireloop Isaac Sim -->
+      <div class="project-card" data-category="controls planning perception simulation">
+        <div class="project-image">
+          <img src="assets/projects/isaac.png" alt="multi-robot-swarms" />
+        </div>
+        <div class="project-content">
+          <h3>Pick and Place with so101 Arm Robot</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Robotic Manipulation</span>
+            <span>Nvidia Isaac Sim</span>
+            <span>ROS2</span>
+            <span>Path Planning</span>
+          </div>
+          <p>
+            This project focuses on implementing pick and place operations using the so101 arm robot in a Nvidia Isaac Sim environment.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Madhav2133/so101arm_fireloop.git" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Painterbots -->
+      <div class="project-card" data-category="controls planning simulation">
+        <div class="project-image">
+          <img src="assets/projects/turtlebot3-burger.webp" alt="multi-robot-swarms" />
+        </div>
+        <div class="project-content">
+          <h3>Painterbots: Autonomous Painting Turtlebots</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>ROS</span>
+            <span>Path Planning</span>
+            <span>Gazebo</span>
+          </div>
+          <p>
+            This project involves developing motion planning algorithms for painting using Turtlebot3 (both simulation and real-time) , utilizing ROS for control and path planning to create artistic patterns.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Sharoy464/painterbot.git" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENPM700 AEROSCRIPT Project -->
+      <div class="project-card" data-category="controls planning simulation">
+        <div class="project-image">
+          <img src="assets/projects/aeroscript.png" alt="multi-robot-swarms" />
+        </div>
+        <div class="project-content">
+          <h3>AEROSCRIPT: Multi-drone Coordination System</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Multi-Robot Swarms</span>
+            <span>Webots Sim</span>
+            <span>ROS2</span>
+            <span>Path Planning</span>
+          </div>
+          <p>
+            This is a ROS2-based multi-drone coordination system that enables multiple drones to collaboratively write letters in the air using RVO (Reciprocal Velocity Obstacles) path planning. 
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/siddhant-code/Aeroscript.git" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zagreb -->
+      <div class="project-card" data-category="underwater-robotics general">
+        <div class="project-image">
+          <img src="assets/projects/robot.png" alt="" />
+        </div>
+        <div class="project-content">
+          <h3>Multi-Sensor Fusion and Calibration</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Sensor Fusion</span>
+            <span>Python</span>
+          </div>
+          <p>
+              This project focuses on fusing data from multiple sensors (Ouster LiDAR and multiple cameras) and calibrating them for improved accuracy in underwater robotics applications.
+          </p>
+          <div class="project-links">
+            <a href="" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Klieo -->
+      <div class="project-card" data-category="underwater-robotics ml-dl">
+        <div class="project-image">
+          <img src="assets/projects/robot.png" alt="" />
+        </div>
+        <div class="project-content">
+          <h3>Surface Position Prediction for Autonomous Gliders using LSTM</h3>
+          <div class="project-tags">
+            <span>Robotics</span>
+            <span>Underwater Gliders</span>
+            <span>LSTM</span>
+            <span>Python</span>
+          </div>
+          <p>
+              This project focuses on developing an LSTM-based model to predict the surface position of autonomous underwater gliders, enhancing their navigation and mission planning capabilities.
+          </p>
+          <div class="project-links">
+            <a href="" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+      </div>
 
       <!-- ENAE788O Multi-Robot Swarms -->
       <div class="project-card" data-category="controls planning underwater-robotics">
@@ -267,7 +379,7 @@
       </div>
 
       <!-- ENPM673 - Perception -->
-      <div class="project-card" data-category="perception">
+      <div class="project-card" data-category="perception simulation">
         <div class="project-image">
           <img src="assets/projects/turtlebot4.jpg" alt="turtlebot4" />
         </div>
@@ -292,7 +404,7 @@
       </div>
 
       <!-- ENPM661 - Planning -->
-      <div class="project-card" data-category="planning">
+      <div class="project-card" data-category="planning simulation">
         <div class="project-image">
           <img src="assets/projects/turtlebot4.jpg" alt="turtlebot4" />
         </div>
@@ -318,7 +430,7 @@
       </div>
 
       <!-- UAV Project -->
-      <div class="project-card" data-category="perception ml-dl planning">
+      <div class="project-card" data-category="perception ml-dl planning simulation">
         <div class="project-image">
           <img src="assets/projects/drone.png" alt="UAV" />
         </div>
@@ -330,6 +442,7 @@
             <span>Autonomous Systems</span>
             <span>Bezier Curve</span>
             <span>Multi-Task Learning</span>
+            <span>Gazebo</span>
           </div>
           <p>
             Developed GPS-free localization for UAVs in indoor environments,
@@ -365,7 +478,7 @@
       </div>
 
       <!-- AUV Nemo Project -->
-      <div class="project-card" data-category="planning perception underwater-robotics">
+      <div class="project-card" data-category="planning perception underwater-robotics simulation">
         <div class="project-image">
           <img src="assets/projects/project1.jpg" alt="AUV Nemo" />
         </div>
@@ -498,7 +611,7 @@
       </div>
 
       <!-- TCAS System Project -->
-      <div class="project-card" data-category="planning">
+      <div class="project-card" data-category="planning simulation">
         <div class="project-image">
           <img src="assets/projects/project0.jpg" alt="TCAS System" />
         </div>
